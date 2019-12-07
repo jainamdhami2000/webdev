@@ -1,0 +1,296 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(233, 13%, 49%);
+  background-color: hsl(240, 78%, 98%);
+}
+
+h2 {
+  margin: 50px;
+}
+
+h1 {
+  color: hsl(232, 13%, 33%);
+  font-style: bold;
+  font-size: 55px;
+}
+
+hr {
+  width: 80%;
+  color: hsl(234, 14%, 74%);
+  border-style: solid none none none;
+}
+
+.toggle {
+  color: hsl(234, 14%, 74%);
+  padding-bottom: 5px;
+}
+
+.svg_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.svg_top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.flipswitch {
+  background-color: white;
+  position: relative;
+  width: 41px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,.3);
+}
+
+.flipswitch input[type=checkbox] {
+  display: none;
+}
+
+.flipswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0px solid #FFFFFF;
+  border-radius: 50px;
+}
+
+.flipswitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  -moz-transition: margin 0.3s ease-in 0s;
+  -ms-transition: margin 0.3s ease-in 0s;
+  -o-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.flipswitch-inner:before, .flipswitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 24px;
+  padding: 0;
+  line-height: 24px;
+  font-size: 18px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.flipswitch-inner:before {
+  content: "";
+  padding-left: 12px;
+  box-shadow: 5px 10px 18px #CDCDCD;
+  color: #FFFFFF;
+  box-shadow: inset 0 4px 10px rgba(0,0,0,.05);
+
+}
+
+.flipswitch-inner:after {
+  content: "";
+  padding-right: 12px;
+  background-image: linear-gradient(to right,white,);
+  box-shadow: 5px 10px 18px #CDCDCD;
+  color: #888888;
+  text-align: right;
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  box-shadow: inset 0 4px 10px rgba(0,0,0,.05);
+}
+
+.flipswitch-switch {
+  width: 20px;
+  margin: 2px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 15px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  -moz-transition: all 0.3s ease-in 0s;
+  -ms-transition: all 0.3s ease-in 0s;
+  -o-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s;
+  box-shadow: 0 8px 6px -4px rgba(0,0,0,0.25);
+}
+
+.flipswitch-cb:checked+.flipswitch-label .flipswitch-inner {
+  margin-left: 0;
+}
+
+.flipswitch-cb:checked+.flipswitch-label .flipswitch-switch {
+  right: 0;
+}
+
+.Monthly{
+margin: 0;
+}
+
+.Yearly{
+margin: 0;
+}
+
+.Details {
+  position: relative;
+  height: 400px;
+  width: 900px;
+  margin: 100px auto 50px auto;
+  background-image: linear-gradient();
+}
+
+.Master {
+  width: 300px;
+  height: 325px;
+  position: absolute;
+  right: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: white;
+  padding-top: 25px;
+  box-shadow: 5px 10px 18px #CDCDCD;
+  line-height: 1.5;
+}
+
+.Basic {
+  width: 300px;
+  height: 325px;
+  position: absolute;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: white;
+  padding-top: 25px;
+  line-height: 1.5;
+  box-shadow: 5px 10px 18px #CDCDCD;
+}
+
+.Professional {
+  width: 300px;
+  height: 375px;
+  position: absolute;
+  right: 300px;
+  background-image: linear-gradient(to  right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  border-radius: 10px;
+  bottom: 25px;
+  padding-top: 25px;
+  box-shadow: 5px 10px 18px #CDCDCD;
+  line-height: 2;
+}
+
+.professional {
+  color: white;
+}
+
+.myButton {
+  -moz-box-shadow: 0px 10px 24px -7px #ffffff;
+  -webkit-box-shadow: 0px 10px 24px -7px #ffffff;
+  box-shadow: 0px 10px 24px -7px #ffffff;
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 9px 70px;
+  text-decoration: none;
+  margin-top: 20px;
+  background-image: -webkit-linear-gradient(left, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: -o-linear-gradient(left, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));\
+  font-weight: 500;
+}
+
+.myButton:hover {
+  background-color: transparent;
+  border: 1px solid #696fdd;
+  color: #696fdd;
+  background-image: linear-gradient(to right,white,white);
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButtona {
+  -moz-box-shadow: 0px 10px 24px -7px #696fdd;
+  -webkit-box-shadow: 0px 10px 24px -7px #696fdd;
+  box-shadow: 0px 10px 24px -7px #696fdd;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #696fdd), color-stop(1, #696fdd));
+  background: -moz-linear-gradient(top, white 5%, white 100%);
+  background: -webkit-linear-gradient(top, white 5%, white 100%);
+  background: -o-linear-gradient(top, white 5%, white 100%);
+  background: -ms-linear-gradient(top, white 5%, white 100%);
+  background: linear-gradient(to bottom, white 5%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='white', GradientType=0);
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 0px solid #696fdd;
+  display: inline-block;
+  cursor: pointer;
+  color: #696fdd ;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding: 5px 70px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px white;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.myButtona:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #696fdd), color-stop(1, #696fdd));
+  background: -moz-linear-gradient(top, #696fdd 5%, #696fdd 100%);
+  background: -webkit-linear-gradient(top, #696fdd 5%, #696fdd 100%);
+  background: -o-linear-gradient(top, #696fdd 5%, #696fdd 100%);
+  background: -ms-linear-gradient(top, #696fdd 5%, #696fdd 100%);
+  background: linear-gradient(to bottom, #696fdd 5%, #696fdd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#696fdd', endColorstr='#696fdd', GradientType=0);
+  background-image: -webkit-linear-gradient(left, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: -o-linear-gradient(left, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: white;
+  border: 1px solid white;
+}
+
+.myButtona:active {
+  position: relative;
+  top: 1px;
+}
+
+.dollarmid{
+  color: hsl(232, 13%, 33%);
+  font-size: 25px;
+  position: absolute;
+  left: 55px;
+  top:92px;
+  font-weight: normal;
+}
+
+.dollar{
+  color: hsl(232, 13%, 33%);
+  font-size: 25px;
+  position: absolute;
+  left: 55px;
+  top:75px;
+  font-weight: normal;
+}
