@@ -62,7 +62,7 @@
       Basic
       <strong>
         <h1 class="Monthly "><span class="dollar">&dollar;</span>19.99</h1>
-        <h1 hidden class="Yearly "><span class="dollar">&dollar;</span>199.99</h1>
+        <h1 style="display:none" class="Yearly "><span class="dollar">&dollar;</span>199.99</h1>
 
       </strong>
 
@@ -78,7 +78,7 @@
       Professional
       <strong>
         <h1 class="professional Monthly "><span class="dollarmid">&dollar;</span>24.99</h1>
-        <h1 hidden class="professional Yearly "><span class="dollarmid">&dollar;</span>249.99</h1>
+        <h1 style="display:none" class="professional Yearly "><span class="dollarmid">&dollar;</span>249.99</h1>
 
       </strong>
 
@@ -95,7 +95,7 @@
       Master
       <strong>
         <h1 class="Monthly "> <span class="dollar">&dollar;</span>39.99</h1>
-        <h1 hidden class="Yearly "><span class="dollar">&dollar;</span>399.99</h1>
+        <h1 style="display:none" class="Yearly "><span class="dollar">&dollar;</span>399.99</h1>
 
       </strong>
 
@@ -115,15 +115,20 @@
       var Monthly = document.getElementsByClassName("Monthly ");
       var Yearly = document.getElementsByClassName("Yearly ");
       if (checkBox.checked == true) {
-        Monthly[0].innerHTML = "&dollar;199.99";
-        Monthly[1].innerHTML = "&dollar;249.99";
-        Monthly[2].innerHTML = "&dollar;399.99";
+        Monthly[0].style.display="none";
+        Monthly[1].style.display="none";
+        Monthly[2].style.display="none";
+        Yearly[0].style.display = "block";
+        Yearly[1].style.display = "block";
+        Yearly[2].style.display = "block";
       }
       if (checkBox.checked == false) {
-        Monthly.style.visibility = "true";
-        Yearly[0].innerHTML = "&dollar;19.99";
-        Yearly[1].innerHTML = "&dollar;24.99";
-        Yearly[2].innerHTML = "&dollar;39.99";
+        Yearly[0].style.display = "none";
+        Yearly[1].style.display = "none";
+        Yearly[2].style.display = "none";
+        Monthly[0].style.display="block";
+        Monthly[1].style.display="block";
+        Monthly[2].style.display="block";
       }
     }
   </script>
